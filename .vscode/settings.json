@@ -1,0 +1,18 @@
+{
+  "easysass.compileAfterSave": true,
+  "easysass.formats": [ //nested：嵌套缩进的 css 代码。
+    //expanded：没有缩进的、扩展的css代码。
+    //compact：简洁格式的 css 代码。
+    //compressed：压缩后的 css 代码
+    {
+      "format": "expanded",
+      "extension": ".css"
+    },
+    {
+      "format": "compressed",
+      "extension": ".min.css"
+    }
+  ],
+  "easysass.targetDir": "css/",
+  "liveServer.settings.port": 5501 //路径
+}

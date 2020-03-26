@@ -1,0 +1,47 @@
+@import './config.scss';
+
+.over {
+  .over_header {
+    padding: 10px 0;
+    background-color: $colorA;
+    margin-bottom: 15px;
+
+    .left {
+      width: 11%;
+      // height: 10%;
+    }
+  }
+
+  .content {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 3px 3px 5px rgb(226, 225, 225);
+
+    .content-top {
+      background-color: $colorL;
+      border-radius: 6px 6px 0 0;
+      padding: 10px;
+      color: $colorG;
+
+      span {
+        font-size: $fontB;
+      }
+    }
+  }
+
+  .desc {
+    margin-top: 15px;
+    font-size: $fontI;
+
+    div {
+      line-height: 40px;
+    }
+  }
+
+  .btn-group {
+    margin: 50px 0 25px;
+    width: 100%;
+  }
+
+}

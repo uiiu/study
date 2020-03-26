@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/*
+  样式规范表
+*/
+body {
+  padding: 80px 0 40px 0;
+  background: #FF6600;
+}
+
+.form-horizontal {
+  max-width: 500px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.mgtop {
+  margin-top: 80px;
+}

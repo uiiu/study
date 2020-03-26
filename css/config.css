@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/*
+  样式规范表
+*/
+.again {
+  background-color: #B59F87;
+  color: #ffffff;
+  border: none;
+}
+
+.again:focus,
+.again:hover {
+  color: #fff !important;
+  text-decoration: none;
+}

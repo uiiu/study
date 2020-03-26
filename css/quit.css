@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/*
+  样式规范表
+*/
+.again {
+  background-color: #B59F87;
+  color: #ffffff;
+  border: none;
+}
+
+.modal-dialog {
+  margin-top: 39%;
+}
+
+.btn-quit {
+  width: 30%;
+}
