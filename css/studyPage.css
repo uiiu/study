@@ -59,12 +59,7 @@
   transform: translateY(-50%);
 }
 
-.carousel_box {
-  height: 150px;
-  overflow: hidden;
-}
-
-.carousel_box .glyphicon {
+.carousel-control .glyphicon {
   top: 50%;
   transform: translateY(-50%);
 }
@@ -78,9 +73,9 @@
 }
 
 .list_box .row > div {
-  border-radius: 8px;
-  height: 80px;
-  line-height: 80px;
+  border-radius: 6px;
+  height: 60px;
+  line-height: 60px;
   text-align: center;
   background: red;
   width: 46%;

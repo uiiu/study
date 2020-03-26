@@ -47,15 +47,13 @@
     }
 }
 
-.carousel_box {
-    height: 150px;
-    overflow: hidden;
-
+.carousel-control {
     .glyphicon {
         top: 50%;
         transform: translateY(-50%);
     }
 }
+
 
 // 列表展示 
 .list_box {
@@ -65,9 +63,9 @@
         margin: 0;
 
         &>div {
-            border-radius: 8px;
-            height: 80px;
-            line-height: 80px;
+            border-radius: 6px;
+            height: 60px;
+            line-height: 60px;
             text-align: center;
             background: red;
             width: 46%;
