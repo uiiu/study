@@ -1,0 +1,135 @@
+@import './config.scss';
+
+.index_header {
+    padding: 10px 0;
+    position: relative;
+
+    .go_back {
+        color: $colorG;
+    }
+
+    .mine {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+    }
+
+    .integral {
+        border-right: 1px solid $colorG;
+
+        div {
+            &.integral_lable {
+                padding: 0;
+                width: 15px;
+                display: block;
+                line-height: 1.2;
+                color: $colorG;
+                font-size: $fontK;
+            }
+
+            &.integral_num {
+                color: $colorG;
+                font-size: $fontE;
+                padding: 0;
+            }
+        }
+    }
+
+    .mine_btn {
+        color: $colorG;
+        font-size: $fontH;
+        font-weight: 600;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.carousel_box {
+    height: 150px;
+    overflow: hidden;
+
+    .glyphicon {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+// 列表展示 
+.list_box {
+    margin-top: 20px;
+
+    .row {
+        margin: 0;
+
+        &>div {
+            border-radius: 8px;
+            height: 80px;
+            line-height: 80px;
+            text-align: center;
+            background: red;
+            width: 46%;
+            margin-bottom: 20px;
+            font-size: $fontH;
+
+            a {
+                width: 100%;
+                height: 100%;
+                display: block;
+                text-decoration: none;
+                color: $colorG;
+            }
+        }
+    }
+}
+
+
+// 尾部tap
+.footer_tap {
+    border-top: 1px solid $colorE;
+    background: $colorG;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    line-height: 60px;
+
+    .col-xs-4 {
+        font-size: $fontI;
+    }
+
+    .study_btn {
+        border-radius: 50%;
+
+        a {
+            display: block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 0 auto;
+            background: red;
+            margin-top: 5px;
+            line-height: 50px;
+            color: $colorG;
+            font-size: $fontI;
+            text-decoration: none;
+        }
+    }
+
+    a {
+        color: $colorC;
+        text-decoration: none;
+    }
+
+    a:focus,
+    a:hover {
+        color: $colorC;
+        text-decoration: none;
+    }
+
+}

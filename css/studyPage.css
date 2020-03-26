@@ -19,6 +19,10 @@
   position: relative;
 }
 
+.index_header .go_back {
+  color: #ffffff;
+}
+
 .index_header .mine {
   position: absolute;
   top: 50%;
@@ -55,122 +59,47 @@
   transform: translateY(-50%);
 }
 
-.carousel-control .glyphicon {
+.carousel_box {
+  height: 150px;
+  overflow: hidden;
+}
+
+.carousel_box .glyphicon {
   top: 50%;
   transform: translateY(-50%);
 }
 
 .list_box {
-  padding-bottom: 50px;
+  margin-top: 20px;
 }
 
-.list {
-  margin-top: 28px;
-  padding-bottom: 10px;
+.list_box .row {
+  margin: 0;
 }
 
-.list a {
+.list_box .row > div {
+  border-radius: 8px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  background: red;
+  width: 46%;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.list_box .row > div a {
+  width: 100%;
   height: 100%;
   display: block;
-}
-
-.list .list_title_box {
-  margin-bottom: 20px;
-}
-
-.list .list_title {
-  position: relative;
-  margin-left: 15px;
-}
-
-.list .list_title h3 {
-  font-size: 16px;
-  font-weight: 600;
-  display: inline;
-  color: #333333;
-}
-
-.list .list_title:after {
-  position: absolute;
-  left: 0;
-  bottom: 50%;
-  transform: translateY(50%);
-  content: "";
-  background: #e52317;
-  width: 4px;
-  height: 16px;
-  display: block;
-}
-
-.list .open_btn {
-  color: #999999;
-  font-size: 14px;
-}
-
-.list .list_group .list_li {
-  border-radius: 6px;
-  float: left;
-  overflow: hidden;
-}
-
-.list .list_group .list_txt {
-  padding: 0 10px;
-  width: 100%;
-  height: 75px;
-  position: relative;
-  border: 1px solid #d7d7d7;
-  box-sizing: border-box;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  background: #ffffff;
-}
-
-.list .list_group .list_txt h3 {
-  font-size: 16px;
-  color: #000000;
-  margin-top: 8px;
-}
-
-.list .list_group .list_txt p {
-  font-size: 14px;
-  color: #999999;
-  position: absolute;
-  bottom: -5px;
-  padding: 0;
-}
-
-.list .list_module {
-  border-bottom: 1px solid #d7d7d7;
-  padding-bottom: 10px;
-}
-
-.list .list_module .list_pic {
-  width: 100%;
-}
-
-.list .small_title {
-  font-size: 16px;
-  color: #333333;
-  margin-top: 12px;
-}
-
-.list .article_info {
-  color: #cccccc;
-  font-size: 14px;
-  margin-top: 10px;
-}
-
-.list .article_info .author {
-  float: left;
-}
-
-.list .article_info .timer {
-  float: left;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .footer_tap {
   border-top: 1px solid #cccccc;
   background: #ffffff;
+  width: 100%;
   height: 60px;
   position: fixed;
   bottom: 0;
