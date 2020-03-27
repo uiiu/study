@@ -1,11 +1,16 @@
 @import './config.scss';
 
 .index_header {
-    padding: 10px 0;
+    padding: 15px 0;
     position: relative;
 
+    &.body_bgcolor {
+        background-color: $colorJ;
+        border-bottom: 1px solid $colorE;
+    }
+
     .go_back {
-        color: $colorG;
+        color: $colorB;
     }
 
     .mine {
@@ -24,12 +29,12 @@
                 width: 15px;
                 display: block;
                 line-height: 1.2;
-                color: $colorG;
+                color: $colorB;
                 font-size: $fontK;
             }
 
             &.integral_num {
-                color: $colorG;
+                color: $colorB;
                 font-size: $fontE;
                 padding: 0;
             }
@@ -37,7 +42,7 @@
     }
 
     .mine_btn {
-        color: $colorG;
+        color: $colorB;
         font-size: $fontH;
         font-weight: 600;
         position: absolute;
@@ -64,10 +69,10 @@
 
         &>div {
             border-radius: 6px;
-            height: 50px;
-            line-height: 50px;
+            height: 56px;
+            line-height: 56px;
             text-align: center;
-            background: red;
+            background: $colorL;
             width: 46%;
             margin-bottom: 20px;
             font-size: $fontI;
@@ -110,7 +115,7 @@
             height: 50px;
             border-radius: 50%;
             margin: 0 auto;
-            background: red;
+            background: $colorL;
             margin-top: 5px;
             line-height: 50px;
             color: $colorG;

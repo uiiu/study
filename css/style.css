@@ -19,7 +19,7 @@ img {
 }
 
 .body_bgcolor {
-  background: #e52317;
+  border-bottom: 1px solid #666;
 }
 
 .btn_bgcolor {

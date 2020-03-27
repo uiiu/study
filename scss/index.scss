@@ -4,6 +4,11 @@
     padding: 10px 0;
     position: relative;
 
+    &.body_bgcolor {
+        background-color: $colorJ;
+        border-bottom: 1px solid $colorE;
+    }
+
     .mine {
         position: absolute;
         top: 50%;
@@ -20,12 +25,12 @@
                 width: 15px;
                 display: block;
                 line-height: 1.2;
-                color: $colorG;
+                color: $colorB;
                 font-size: $fontK;
             }
 
             &.integral_num {
-                color: $colorG;
+                color: $colorB;
                 font-size: $fontE;
                 padding: 0;
             }
@@ -33,7 +38,7 @@
     }
 
     .mine_btn {
-        color: $colorG;
+        color: $colorB;
         font-size: $fontH;
         font-weight: 600;
         position: absolute;
@@ -188,7 +193,7 @@
             height: 50px;
             border-radius: 50%;
             margin: 0 auto;
-            background: red;
+            background: $colorL;
             margin-top: 5px;
             line-height: 50px;
             color: $colorG;

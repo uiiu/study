@@ -15,12 +15,17 @@
 }
 
 .index_header {
-  padding: 10px 0;
+  padding: 15px 0;
   position: relative;
 }
 
+.index_header.body_bgcolor {
+  background-color: #F5F5F5;
+  border-bottom: 1px solid #cccccc;
+}
+
 .index_header .go_back {
-  color: #ffffff;
+  color: #333333;
 }
 
 .index_header .mine {
@@ -39,18 +44,18 @@
   width: 15px;
   display: block;
   line-height: 1.2;
-  color: #ffffff;
+  color: #333333;
   font-size: 12px;
 }
 
 .index_header .integral div.integral_num {
-  color: #ffffff;
+  color: #333333;
   font-size: 24px;
   padding: 0;
 }
 
 .index_header .mine_btn {
-  color: #ffffff;
+  color: #333333;
   font-size: 18px;
   font-weight: 600;
   position: absolute;
@@ -74,10 +79,10 @@
 
 .list_box .row > div {
   border-radius: 6px;
-  height: 50px;
-  line-height: 50px;
+  height: 56px;
+  line-height: 56px;
   text-align: center;
-  background: red;
+  background: #B59F87;
   width: 46%;
   margin-bottom: 20px;
   font-size: 16px;
@@ -118,7 +123,7 @@
   height: 50px;
   border-radius: 50%;
   margin: 0 auto;
-  background: red;
+  background: #B59F87;
   margin-top: 5px;
   line-height: 50px;
   color: #ffffff;
