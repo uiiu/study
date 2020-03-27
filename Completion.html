@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>填空题</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/manySelect.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="container">
+            <div class="row index_header body_bgcolor clearfloat">
+                <div class="go_back col-xs-3"><span class="glyphicon glyphicon-menu-left"></span></div>
+                <div class="col-xs-3 col-xs-offset-5 determine text-right">确定</div>
+            </div>
+        </div>
+    </div>
+    <!-- 题内容 -->
+    <div class="topic_box">
+        <div class="container">
+            <div class="topic">
+                <h3 class="topic_type">填空题</h3>
+                <p class="topic_txt">1.这是一道填空题<input type="text">这是一道填空题这是一道填空题这是一道填空题这是一道填空题
+                    <input type="text">这是一道填空题这是一道填空题这是一道填空题这是一道填空题。
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- 答案 -->
+    <div class="Answer">
+        <span>答案</span>
+    </div>
+    <!-- 页数 -->
+    <div class="num_page">
+        <span class="now_page">1</span>/
+        <span class="total">10</span>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/style.js"></script>
+    <script>
+        $(function () {
+            $(".topic_txt").children("input").on("input", function () {
+                if ($(this).val() !== "") {
+                    $(".determine").show();
+                }
+            })
+        }())
+    </script>
+</body>
