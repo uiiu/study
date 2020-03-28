@@ -92,13 +92,14 @@
 }
 
 .topic_txt {
+  text-indent: 2em;
   letter-spacing: 2px;
   color: #333333;
   font-size: 18px;
 }
 
 .select_li.active .input-group {
-  background: #e52317;
+  background: #B59F87;
 }
 
 .select_li.active .input-group input {

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>填空题</title>
+    <title>单选题</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/manySelect.css">
@@ -16,10 +16,9 @@
         <div class="container">
             <div class="row index_header body_bgcolor clearfloat">
                 <a href="#myModal" data-toggle="modal">
-                    <div class="go_back col-xs-3">
-                        <span class="glyphicon glyphicon-menu-left"></span>
-                    </div>
+                    <div class="go_back col-xs-3"><span class="glyphicon glyphicon-menu-left"></span></div>
                 </a>
+
                 <a href="#myOk" data-toggle="modal">
                     <div class="col-xs-3 col-xs-offset-5 determine text-right">确定</div>
                 </a>
@@ -30,11 +29,29 @@
     <div class="topic_box">
         <div class="container">
             <div class="topic">
-                <h3 class="topic_type">填空题</h3>
-                <p class="topic_txt">1.这是一道填空题<input type="text" maxlength="1"><input type="text"
-                        maxlength="1">这是一道填空题这是一道填空题填空题
-                    <input type="text" maxlength="1">这是一道填空题这是一道填空题这是一道填空题这是一道填空题。
+                <h3 class="topic_type">单选题</h3>
+                <p class="topic_txt">这是单选题这是单选，题这是单选题这是单选题这是单选题这是单选题这是单选题，这是单选题这是单选题。
                 </p>
+                <div class="topic_pic"><img src="./img/list_pic.png" alt=""></div>
+                <div class="select_box">
+                    <div class="row">
+                        <div class="col-lg-6 select_li">
+                            <div class="input-group">
+                                <input type="text" class="form-control" readonly value="答案一">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 select_li">
+                            <div class="input-group">
+                                <input type="text" class="form-control" readonly value="答案二">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 select_li">
+                            <div class="input-group">
+                                <input type="text" class="form-control" readonly value="答案三">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -80,7 +97,7 @@
                     <h4 class="modal-title" id="myModalLabel">答案</h4>
                 </div>
                 <div class="modal-body">
-                    <p class="h4">诚信 自由</p>
+                    <p class="h4">答案一</p>
                     <p class="h5">答案的解释答案的解释答案的解释答案的解释答案的解释。</p>
                 </div>
                 <div class="modal-footer">
@@ -92,17 +109,17 @@
     </div>
 
 
+
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/style.js"></script>
     <script>
-        $(function () {
-            $(".topic_txt").children("input").on("input", function () {
-                if ($(this).val() !== "") {
-                    $(".determine").show();
-                }
-            });
-
-        }())
+        $(".select_li").click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+            $(".determine").show();
+        });
+        $(".determine").click(function () {
+            console.log("已按确定");
+        });
     </script>
 </body>

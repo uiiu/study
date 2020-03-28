@@ -86,6 +86,7 @@
 
 // 问题题目
 .topic_txt {
+    text-indent: 2em;
     letter-spacing: 2px;
     color: $colorB;
     font-size: $fontH;
@@ -95,7 +96,7 @@
 .select_li {
     &.active {
         .input-group {
-            background: $colorA;
+            background: $colorL;
 
             input {
                 color: $colorK;
