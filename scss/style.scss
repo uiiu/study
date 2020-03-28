@@ -18,6 +18,10 @@ img {
     display: block;
 }
 
+input:focus {
+    border: none;
+}
+
 // 主题背景颜色
 .body_bgcolor {
     // background: #e52317;

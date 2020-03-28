@@ -18,6 +18,10 @@ img {
   display: block;
 }
 
+input:focus {
+  border: none;
+}
+
 .body_bgcolor {
   border-bottom: 1px solid #666;
 }
