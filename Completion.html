@@ -15,8 +15,14 @@
     <div class="header">
         <div class="container">
             <div class="row index_header body_bgcolor clearfloat">
-                <div class="go_back col-xs-3"><span class="glyphicon glyphicon-menu-left"></span></div>
-                <div class="col-xs-3 col-xs-offset-5 determine text-right">确定</div>
+                <a href="#myModal" data-toggle="modal">
+                    <div class="go_back col-xs-3">
+                        <span class="glyphicon glyphicon-menu-left"></span>
+                    </div>
+                </a>
+                <a href="#myOk" data-toggle="modal">
+                    <div class="col-xs-3 col-xs-offset-5 determine text-right">确定</div>
+                </a>
             </div>
         </div>
     </div>
@@ -41,6 +47,49 @@
         <span class="now_page">1</span>/
         <span class="total">10</span>
     </div>
+
+    <!-- 中途退出Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">提示</h4>
+                </div>
+                <div class="modal-body">
+                    <p class="h4">本轮题目答题未结束，确定退出？</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-quit" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-quit again" data-dismiss="modal" id="quit">退出</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 点击确定之后Modal -->
+    <div class="modal fade" id="myOk" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">正确答案</h4>
+                </div>
+                <div class="modal-body">
+                    <p class="h4">诚信 自由</p>
+                    <p class="h5">答案的解释答案的解释答案的解释答案的解释答案的解释。</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-quit" data-dismiss="modal">确定</button>
+                    <!-- <button type="button" class="btn btn-quit again" data-dismiss="modal" id="">退出</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/style.js"></script>
@@ -50,7 +99,12 @@
                 if ($(this).val() !== "") {
                     $(".determine").show();
                 }
+            });
+            // 点击返回按钮跳转到结束页
+            $('#quit').on('click', function () {
+                window.location.href = "./over.html";
             })
+
         }())
     </script>
 </body>

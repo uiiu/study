@@ -2,13 +2,13 @@
 
 .over {
   .over_header {
-    padding: 10px 0;
-    background-color: $colorA;
-    margin-bottom: 15px;
+    padding: 15px 0;
+    position: relative;
+    margin-bottom: 20px;
 
-    .left {
-      width: 11%;
-      // height: 10%;
+    &.body_bgcolor {
+      background-color: $colorJ;
+      border-bottom: 1px solid $colorE;
     }
   }
 

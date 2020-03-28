@@ -8,14 +8,21 @@
   border: none;
 }
 
-.over .over_header {
-  padding: 10px 0;
-  background-color: #e52317;
-  margin-bottom: 15px;
+.again:focus,
+.again:hover {
+  color: #fff !important;
+  text-decoration: none;
 }
 
-.over .over_header .left {
-  width: 11%;
+.over .over_header {
+  padding: 15px 0;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.over .over_header.body_bgcolor {
+  background-color: #F5F5F5;
+  border-bottom: 1px solid #cccccc;
 }
 
 .over .content {
