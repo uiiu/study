@@ -15,7 +15,7 @@
 }
 
 .index_header {
-  padding: 10px 0;
+  padding: 6px 0;
   position: relative;
 }
 
@@ -39,7 +39,7 @@
   padding: 0;
   width: 15px;
   display: block;
-  line-height: 1.2;
+  line-height: 1.3;
   color: #333333;
   font-size: 12px;
 }
@@ -101,7 +101,7 @@
   bottom: 50%;
   transform: translateY(50%);
   content: "";
-  background: #e52317;
+  background: #B59F87;
   width: 4px;
   height: 16px;
   display: block;
@@ -182,32 +182,26 @@
   left: 0;
   right: 0;
   margin: 0 auto;
-  line-height: 60px;
 }
 
 .footer_tap .col-xs-4 {
   font-size: 16px;
-}
-
-.footer_tap .study_btn {
-  border-radius: 50%;
+  padding: 0;
 }
 
 .footer_tap .study_btn a {
   display: block;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+  height: 60px;
   margin: 0 auto;
   background: #B59F87;
-  margin-top: 5px;
-  line-height: 50px;
   color: #ffffff;
   font-size: 16px;
   text-decoration: none;
 }
 
 .footer_tap a {
+  display: inline-block;
+  padding: 10px 0;
   color: #666666;
   text-decoration: none;
 }
