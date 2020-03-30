@@ -176,7 +176,7 @@
 .footer_tap {
   border-top: 1px solid #cccccc;
   background: #ffffff;
-  height: 60px;
+  height: 50px;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -191,17 +191,17 @@
 
 .footer_tap .study_btn a {
   display: block;
-  height: 60px;
+  height: 50px;
   margin: 0 auto;
-  background: #B59F87;
-  color: #ffffff;
+  color: #2295E7;
   font-size: 16px;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .footer_tap a {
   display: inline-block;
-  padding: 10px 0;
+  padding: 4px 0;
   color: #666666;
   text-decoration: none;
 }

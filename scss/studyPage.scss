@@ -94,7 +94,7 @@
     border-top: 1px solid $colorE;
     background: $colorG;
     width: 100%;
-    height: 60px;
+    height: 50px;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -109,19 +109,19 @@
     .study_btn {
         a {
             display: block;
-            height: 60px;
+            height: 50px;
             margin: 0 auto;
-            background: $colorL;
-            color: $colorG;
+            color: $colorM;
             font-size: $fontI;
             text-decoration: none;
+            font-weight: bold;
         }
 
     }
 
     a {
         display: inline-block;
-        padding: 10px 0;
+        padding: 4px 0;
         color: $colorC;
         text-decoration: none;
     }
