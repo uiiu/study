@@ -89,7 +89,7 @@
     text-indent: 2em;
     letter-spacing: 2px;
     color: $colorB;
-    font-size: $fontH;
+    font-size: $fontI;
 }
 
 // 答案选项
@@ -153,6 +153,18 @@
     padding: 30px 0;
 
     .topic {
+        .topic_header {
+            position: relative;
+
+            //页数
+            .num_page {
+                position: absolute;
+                right: 0;
+                top: 0;
+                font-weight: bold;
+            }
+        }
+
         .topic_type {
             font-size: $fontI;
             color: $colorB;
@@ -162,15 +174,16 @@
 
         .topic_txt {
             font-size: $fontH;
-            line-height: 2;
+            line-height: 1.7;
 
             input {
                 background: none;
                 outline: none;
                 border: none;
-                border-bottom: 1px solid $colorD;
-                margin: 0 5px;
-                width: 30px;
+                border: 1px solid $colorD;
+                margin: 0 3px;
+                width: 27px;
+                height: 27px;
                 text-align: center;
 
                 &:focus {
@@ -198,12 +211,7 @@
     }
 }
 
-//页数
-.num_page {
-    position: fixed;
-    left: 15px;
-    bottom: 30px;
-}
+
 
 // 中途退出
 .modal-dialog {

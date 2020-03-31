@@ -95,7 +95,7 @@
   text-indent: 2em;
   letter-spacing: 2px;
   color: #333333;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .select_li.active .input-group {
@@ -150,6 +150,17 @@
   padding: 30px 0;
 }
 
+.topic_box .topic .topic_header {
+  position: relative;
+}
+
+.topic_box .topic .topic_header .num_page {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-weight: bold;
+}
+
 .topic_box .topic .topic_type {
   font-size: 16px;
   color: #333333;
@@ -159,16 +170,17 @@
 
 .topic_box .topic .topic_txt {
   font-size: 18px;
-  line-height: 2;
+  line-height: 1.7;
 }
 
 .topic_box .topic .topic_txt input {
   background: none;
   outline: none;
   border: none;
-  border-bottom: 1px solid #999999;
-  margin: 0 5px;
-  width: 30px;
+  border: 1px solid #999999;
+  margin: 0 3px;
+  width: 27px;
+  height: 27px;
   text-align: center;
 }
 
@@ -189,12 +201,6 @@
 
 .Answer span {
   float: left;
-}
-
-.num_page {
-  position: fixed;
-  left: 15px;
-  bottom: 30px;
 }
 
 .modal-dialog {

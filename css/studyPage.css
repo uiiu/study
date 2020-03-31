@@ -70,22 +70,32 @@
 }
 
 .list_box {
-  margin-top: 20px;
+  margin-top: 30px;
+}
+
+.list_box .wrapper {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .list_box .row {
   margin: 0;
 }
 
+.list_box .row .col-xs-6 {
+  width: 45%;
+}
+
 .list_box .row > div {
-  border-radius: 8px;
-  height: 50px;
-  line-height: 50px;
+  line-height: 60px;
   text-align: center;
-  background: #B59F87;
-  width: 46%;
-  margin-bottom: 20px;
   font-size: 16px;
+  border: 1px solid #d7d7d7;
+  margin-bottom: 30px;
+}
+
+.list_box .row > div:nth-child(odd) {
+  margin-right: 30px;
 }
 
 .list_box .row > div a {
@@ -93,7 +103,7 @@
   height: 100%;
   display: block;
   text-decoration: none;
-  color: #ffffff;
+  color: #333333;
 }
 
 .footer_tap {

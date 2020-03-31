@@ -30,7 +30,15 @@
     <div class="topic_box">
         <div class="container">
             <div class="topic">
-                <h3 class="topic_type">填空题</h3>
+                <div class="topic_header">
+                    <h3 class="topic_type">填空题</h3>
+                    <!-- 页数 -->
+                    <div class="num_page">
+                        <span class="now_page">1</span>/
+                        <span class="total">10</span>
+                    </div>
+                </div>
+
                 <p class="topic_txt">1.这是一道填空题<input type="text" maxlength="1"><input type="text"
                         maxlength="1">这是一道填空题这是一道填空题填空题
                     <input type="text" maxlength="1">这是一道填空题这是一道填空题这是一道填空题这是一道填空题。
@@ -41,14 +49,10 @@
     <!-- 答案 -->
     <a href="#myOk" data-toggle="modal">
         <div class="Answer">
-            <span>答案</span>
+            <span>查看答案</span>
         </div>
     </a>
-    <!-- 页数 -->
-    <div class="num_page">
-        <span class="now_page">1</span>/
-        <span class="total">10</span>
-    </div>
+
 
     <!-- 中途退出Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
