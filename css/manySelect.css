@@ -191,6 +191,7 @@
 .Answer {
   float: right;
   margin-top: 10px;
+  margin-bottom: 20px;
   width: 100px;
   height: 20px;
   color: #333333;
