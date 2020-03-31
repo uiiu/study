@@ -203,6 +203,17 @@
   float: left;
 }
 
+video {
+  object-fit: cover;
+  outline: none;
+  width: 100%;
+  height: 100%;
+}
+
+.resolve {
+  display: none;
+}
+
 .modal-dialog {
   margin-top: 39%;
 }

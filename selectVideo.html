@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>看图选择</title>
+    <title>视频选择</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/manySelect.css">
@@ -39,7 +39,11 @@
                 </div>
                 <p class="topic_txt">这是单选题这是单选，题这是单选题这是单选题题，这是单选题这是单选题。
                 </p>
-                <div class="topic_pic"><img src="./img/list_pic.png" alt=""></div>
+                <div class="topic_pic">
+                    <video
+                        src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"
+                        controls="controls" loop="loop" width="100%" height="240"></video>
+                </div>
                 <div class="select_box">
                     <div class="row">
                         <div class="col-lg-6 select_li">
@@ -62,12 +66,15 @@
             </div>
         </div>
     </div>
+
     <!-- 答案解析 -->
     <div class="container resolve">
         <h3 class="topic_type">答案解析</h3>
         <p class="h4">答案一</p>
         <p class="h5">答案的解释答案的解释答案的解释答案的解释答案的解释。</p>
     </div>
+
+
     <!-- 答案 -->
     <a href="#myOk" data-toggle="modal">
         <div class="Answer">
@@ -126,12 +133,14 @@
             $(this).addClass("active").siblings().removeClass("active");
             $(".determine").show();
         });
+
         $(".correct").click(function () {
             if ($(".determine").html() == '下一题') {
-                window.location.href = "./single.html";
+                window.location.href = "";
             }
             $(".resolve").show();
             $(".determine").html('下一题');
         });
+
     </script>
 </body>

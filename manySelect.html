@@ -19,7 +19,7 @@
                     <div class="go_back col-xs-3"><span class="glyphicon glyphicon-menu-left"></span></div>
                 </a>
 
-                <a href="#myOk" data-toggle="modal">
+                <a class="correct">
                     <div class="col-xs-3 col-xs-offset-5 determine text-right">确定</div>
                 </a>
             </div>
@@ -66,6 +66,14 @@
             </div>
         </div>
     </div>
+
+    <!-- 答案解析 -->
+    <div class="container resolve">
+        <h3 class="topic_type">答案解析</h3>
+        <p class="h4">答案一, 答案二</p>
+        <p class="h5">答案的解释答案的解释答案的解释答案的解释答案的解释。</p>
+    </div>
+
     <!-- 答案 -->
     <a href="#myOk" data-toggle="modal">
         <div class="Answer">
@@ -125,10 +133,12 @@
             $(".determine").show();
 
         });
-        /* $(".determine").click(
-            function () {
-                console.log("确定按扭键点击")
+        $(".correct").click(function () {
+            if ($(".determine").html() == '下一题') {
+                window.location.href = "./judge.html";
             }
-        ); */
+            $(".resolve").show();
+            $(".determine").html('下一题');
+        });
     </script>
 </body>

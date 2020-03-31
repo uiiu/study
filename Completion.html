@@ -20,7 +20,7 @@
                         <span class="glyphicon glyphicon-menu-left"></span>
                     </div>
                 </a>
-                <a href="#myOk" data-toggle="modal">
+                <a class="correct">
                     <div class="col-xs-3 col-xs-offset-5 determine text-right">确定</div>
                 </a>
             </div>
@@ -46,6 +46,14 @@
             </div>
         </div>
     </div>
+
+    <!-- 答案解析 -->
+    <div class="container resolve">
+        <h3 class="topic_type">答案解析</h3>
+        <p class="h4">诚信 自由</p>
+        <p class="h5">答案的解释答案的解释答案的解释答案的解释答案的解释。</p>
+    </div>
+
     <!-- 答案 -->
     <a href="#myOk" data-toggle="modal">
         <div class="Answer">
@@ -106,6 +114,15 @@
                     $(".determine").show();
                 }
             });
+
+            $(".correct").click(function () {
+                if ($(".determine").html() == '下一题') {
+                    window.location.href = "./selectVideo.html";
+                }
+                $(".resolve").show();
+                $(".determine").html('下一题');
+            });
+
 
         }())
     </script>
