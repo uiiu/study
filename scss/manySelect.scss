@@ -150,7 +150,7 @@
 
 // 题内容
 .topic_box {
-    padding: 30px 0;
+    padding: 20px 0 10px;
 
     .topic {
         .topic_header {
@@ -196,19 +196,18 @@
 
 // 答案
 .Answer {
-    position: fixed;
-    right: 15px;
-    bottom: 30px;
+    // position: absolute;
+    // right: 15px;
+    // bottom: 20px;
+    float: right;
+    margin-top: 10px;
+    width: 100px;
+    height: 20px;
     color: $colorB;
     font-size: $fontI;
     background: url("../img/Answer.png") no-repeat;
     background-size: auto 100%;
     padding-left: 24px;
-
-    // img{width: 40px;float: left;}
-    span {
-        float: left;
-    }
 }
 
 
