@@ -1,23 +1,49 @@
 @import './config.scss';
 
 .index_header {
-    padding: 12px 0;
     position: relative;
 
-    &.body_bgcolor {
-        background-color: $colorJ;
-        border-bottom: 1px solid $colorE;
-    }
-
-    .go_back {
-        color: $colorB;
-    }
-
     .mine {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 0;
+        height: 40px;
+        font-size: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+
+        img {
+            display: inline-block;
+            width: 30px;
+        }
+
+        a {
+            letter-spacing: 0.49px;
+            color: #272A33;
+            margin-left: 7px;
+        }
+
+        .header-right {
+            position: relative;
+
+            span {
+                position: absolute;
+                right: -7px;
+                top: -5px;
+                // width: 20px;
+                // height: 20px;
+                background-color: #E65558;
+                color: #ffff;
+                font-size: 10px;
+                padding: 1px 3px;
+                border-radius: 7px;
+
+            }
+
+            img {
+                width: 20px;
+            }
+
+        }
     }
 
     .integral {
@@ -52,21 +78,13 @@
     }
 }
 
-.carousel-control {
-    .glyphicon {
-        top: 50%;
-        transform: translateY(-50%);
-    }
-}
-
-
 // 列表展示 
 .list_box {
     margin-top: 30px;
 
     .wrapper {
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .row {
@@ -74,13 +92,65 @@
 
         .col-xs-6 {
             width: 46%;
+            background: #F3FAFF;
+            border-radius: 4px;
+            padding-right: 0;
+
+            &:nth-child(2) {
+                background: #F4FFFD;
+
+                i::before {
+                    background: url('../img/icon/icon_05.jpg') no-repeat;
+                    background-size: cover;
+                }
+            }
+
+            &:nth-child(3) {
+                background: #F6F4FF;
+
+                i::before {
+                    background: url('../img/icon/icon_09.jpg') no-repeat;
+                    background-size: cover;
+                }
+            }
+
+            &:nth-child(4) {
+                background: #FFF9EE;
+
+                i::before {
+                    background: url('../img/icon/icon_10.jpg') no-repeat;
+                    background-size: cover;
+                }
+            }
+
+            &:nth-child(5) {
+                background: #F3FAFF;
+
+                i::before {
+                    background: url('../img/icon/icon_13.jpg') no-repeat;
+                    background-size: cover;
+                }
+
+                span {
+                    margin-left: 28px;
+                }
+            }
+
+            &:nth-child(6) {
+                background: #F6F7F8;
+
+                i::before {
+                    background: url('../img/icon/icon_15.jpg') no-repeat;
+                    background-size: cover;
+                }
+            }
         }
 
         &>div {
-            line-height: 60px;
+            line-height: 50px;
             text-align: center;
             font-size: $fontI;
-            border: 1px solid $colorF;
+            // border: 1px solid $colorF;
             margin-bottom: 20px;
 
             &:nth-child(odd) {
@@ -93,6 +163,23 @@
                 display: block;
                 text-decoration: none;
                 color: $colorB;
+                position: relative;
+
+                span {
+                    margin-left: 14px;
+                }
+
+                i::before {
+                    content: "";
+                    width: 24px;
+                    height: 24px;
+                    position: absolute;
+                    left: 5px;
+                    top: 14px;
+                    background: url('../img/icon/icon_03.jpg') no-repeat;
+                    background-size: cover;
+                    margin-right: 8px;
+                }
             }
         }
     }
@@ -101,7 +188,7 @@
 
 // 尾部tap
 .footer_tap {
-    border-top: 1px solid $colorE;
+    box-shadow: 2px 2px 5px 0 rgba(153, 153, 153, 0.50);
     background: $colorG;
     width: 100%;
     height: 50px;
@@ -109,7 +196,6 @@
     bottom: 0;
     left: 0;
     right: 0;
-    margin: 0 auto;
 
     .col-xs-4 {
         font-size: $fontI;
@@ -122,9 +208,8 @@
             height: 50px;
             margin: 0 auto;
             color: $colorM;
-            font-size: $fontI;
+            font-size: 12px;
             text-decoration: none;
-            font-weight: bold;
         }
 
     }
@@ -133,6 +218,7 @@
         display: inline-block;
         padding: 4px 0;
         color: $colorC;
+        font-size: 12px;
         text-decoration: none;
     }
 

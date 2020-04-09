@@ -3,17 +3,13 @@
 .index_header {
     position: relative;
 
-    &.body_bgcolor {
-        // background-color: $colorJ;
-        // border-bottom: 1px solid $colorE;
-    }
-
     .mine {
         height: 40px;
         font-size: 15px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 8px;
 
         img {
             display: inline-block;
@@ -257,7 +253,6 @@
     bottom: 0;
     left: 0;
     right: 0;
-    margin: 0 auto;
 
     .col-xs-4 {
         font-size: $fontI;
@@ -272,7 +267,6 @@
             color: $colorM;
             font-size: 12px;
             text-decoration: none;
-            // font-weight: bold;
         }
 
     }
