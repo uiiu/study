@@ -39,9 +39,9 @@
                     </div>
                 </div>
 
-                <p class="topic_txt">1.这是一道填空题<input type="text" maxlength="1"><input type="text"
-                        maxlength="1">这是一道填空题这是一道填空题填空题
-                    <input type="text" maxlength="1">这是一道填空题这是一道填空题这是一道填空题这是一道填空题。
+                <p class="topic_txt">1.这是一道填空题<input type="text" id="first_int" class="inputs" ><input type="text"
+                        class="inputs" maxlength="1"><input type="text"
+                        class="inputs" maxlength="1">这是一道填空题这是一道填空题填空题<input type="text" maxlength="1">这是一道填空题这是一道填空题这是一道填空题这是一道填空题。
                 </p>
             </div>
         </div>
@@ -114,7 +114,7 @@
                     $(".determine").show();
                 }
             });
-
+            // 跳转下一题
             $(".correct").click(function () {
                 if ($(".determine").html() == '下一题') {
                     window.location.href = "./selectVideo.html";
@@ -123,6 +123,26 @@
                 $(".determine").html('下一题');
             });
 
+            // input连续输入文字
+            //第一个input框的id为first_int 不能设置最大的输入长度
+            var arr1 = [];//存储input内所有的输入
+            var txt = '';
+            //监听input 将input内输入的所有添加到数组中
+            $("#first_int").on('input', function () {
+                arr1.push($(this).val());
+                // console.log("1", arr1[arr1.length - 1])
+                //获取选中的所有要填充的文字
+                txt = arr1[arr1.length - 1];
+                var arr = new Array();
+                //可以用字符或字符串分割
+                arr = txt.split('');
+                // console.log(arr)
+                for (var i = 0; i < $(".inputs").length; i++) {
+                    $(".inputs").eq(i).val(arr[i]);
+                    $(".inputs").eq(arr.length - 1).focus();
+                }
+            });
+           
 
         }())
     </script>

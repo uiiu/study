@@ -1,19 +1,53 @@
 @import './config.scss';
 
 .index_header {
-    padding: 6px 0;
     position: relative;
 
     &.body_bgcolor {
-        background-color: $colorJ;
-        border-bottom: 1px solid $colorE;
+        // background-color: $colorJ;
+        // border-bottom: 1px solid $colorE;
     }
 
     .mine {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 0;
+        height: 40px;
+        font-size: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            display: inline-block;
+            width: 30px;
+        }
+
+        a {
+            letter-spacing: 0.49px;
+            color: #272A33;
+            margin-left: 7px;
+        }
+
+        .header-right {
+            position: relative;
+
+            span {
+                position: absolute;
+                right: -7px;
+                top: -5px;
+                // width: 20px;
+                // height: 20px;
+                background-color: #E65558;
+                color: #ffff;
+                font-size: 10px;
+                padding: 1px 3px;
+                border-radius: 7px;
+
+            }
+
+            img {
+                width: 20px;
+            }
+
+        }
     }
 
     .integral {
@@ -61,7 +95,7 @@
 }
 
 .list {
-    margin-top: 28px;
+    margin-top: 18px;
     padding-bottom: 10px;
 
     a {
@@ -74,73 +108,106 @@
     }
 
     .list_title {
-        position: relative;
-        margin-left: 15px;
-
         h3 {
             font-size: $fontI;
             font-weight: 600;
             display: inline;
-            color: $colorB;
+            color: #272A33;
         }
 
-        &:after {
-            position: absolute;
-            left: 0;
-            bottom: 50%;
-            transform: translateY(50%);
-            content: "";
-            background: $colorL;
-            width: 4px;
-            height: 16px;
-            display: block;
-        }
+        // &:after {
+        //     position: absolute;
+        //     left: 0;
+        //     bottom: 50%;
+        //     transform: translateY(50%);
+        //     content: "";
+        //     background: $colorL;
+        //     width: 4px;
+        //     height: 16px;
+        //     display: block;
+        // }
     }
 
     .open_btn {
-        color: $colorD;
-        font-size: $fontJ;
-        // span{vertical-align: text-top;}
+        color: #9397A8;
+        font-size: $fontK;
     }
 
     .list_group {
         .list_li {
+            box-sizing: border-box;
+            position: relative;
             border-radius: 6px;
-            float: left;
             overflow: hidden;
+            padding-right: 0;
+            height: 120px;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
         }
 
         .list_txt {
-            padding: 0 10px;
-            ;
-            width: 100%;
-            height: 75px;
-            position: relative;
-            border: 1px solid $colorF;
-            box-sizing: border-box;
-            border-bottom-left-radius: 6px;
-            border-bottom-right-radius: 6px;
-            background: $colorG;
+            position: absolute;
+            bottom: 0px;
+            left: 25px;
+            color: $colorG;
 
             h3 {
-                font-size: $fontI;
-                color: $colorI;
-                margin-top: 8px;
+                font-size: 13px;
             }
 
             p {
-                font-size: $fontJ;
-                color: $colorD;
-                position: absolute;
-                bottom: -5px;
-                padding: 0;
+                font-size: 11px;
             }
+        }
+
+        .live {
+            position: absolute;
+            top: 10px;
+            left: 25px;
+            width: 50px;
+            height: 16px;
+            font-size: 11px;
+            color: $colorG;
+            background-color: rgba($color: #000000, $alpha: 0.5);
+            text-align: center;
+            border-radius: 6px;
         }
     }
 
+    // 媒体对象
+    .media-wrapper {
+        .media-heading {
+            font-size: 15px;
+            color: #272A33;
+            letter-spacing: 0.49px;
+            margin-bottom: 15px;
+        }
+
+        .media-body {
+            font-size: 13px;
+            color: #808080;
+            width: 75%;
+        }
+
+        .media-right {
+            border-radius: 8px;
+            padding-left: 0;
+            width: 90px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+    }
+
     .list_module {
-        border-bottom: 1px solid $colorF;
         padding-bottom: 10px;
+        background: #F7F8F9;
 
         .list_pic {
             width: 100%;
@@ -148,29 +215,42 @@
     }
 
     .small_title {
-        font-size: $fontI;
-        color: $colorB;
+        font-size: 14px;
+        color: #272A33;
         margin-top: 12px;
     }
 
     .article_info {
-        color: $colorE;
-        font-size: $fontJ;
+        font-size: 11px;
+        color: #9397A8;
         margin-top: 10px;
+    }
 
-        .author {
-            float: left;
+    .meeting {
+        background: #FFF;
+
+        .meet-header {
+            span {
+                background-image: linear-gradient(180deg, #DBC896 0%, #CCAC6C 100%);
+                border-radius: 4px 4px 0 4px;
+                padding: 3px 4px;
+                color: $colorG;
+            }
+
+            h3 {
+                display: inline;
+            }
         }
 
-        .timer {
-            float: left;
+        .author {
+            margin-left: 20px;
         }
     }
 }
 
 // 尾部tap
 .footer_tap {
-    border-top: 1px solid $colorE;
+    box-shadow: 2px 2px 5px 0 rgba(153, 153, 153, 0.50);
     background: $colorG;
     height: 50px;
     position: fixed;
@@ -190,9 +270,9 @@
             height: 50px;
             margin: 0 auto;
             color: $colorM;
-            font-size: $fontI;
+            font-size: 12px;
             text-decoration: none;
-            font-weight: bold;
+            // font-weight: bold;
         }
 
     }
@@ -201,6 +281,7 @@
         display: inline-block;
         padding: 4px 0;
         color: $colorC;
+        font-size: 12px;
         text-decoration: none;
     }
 

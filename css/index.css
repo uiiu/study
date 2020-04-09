@@ -15,20 +15,45 @@
 }
 
 .index_header {
-  padding: 6px 0;
   position: relative;
 }
 
-.index_header.body_bgcolor {
-  background-color: #F5F5F5;
-  border-bottom: 1px solid #cccccc;
+.index_header .mine {
+  height: 40px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.index_header .mine {
+.index_header .mine img {
+  display: inline-block;
+  width: 30px;
+}
+
+.index_header .mine a {
+  letter-spacing: 0.49px;
+  color: #272A33;
+  margin-left: 7px;
+}
+
+.index_header .mine .header-right {
+  position: relative;
+}
+
+.index_header .mine .header-right span {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0;
+  right: -7px;
+  top: -5px;
+  background-color: #E65558;
+  color: #ffff;
+  font-size: 10px;
+  padding: 1px 3px;
+  border-radius: 7px;
+}
+
+.index_header .mine .header-right img {
+  width: 20px;
 }
 
 .index_header .integral {
@@ -70,7 +95,7 @@
 }
 
 .list {
-  margin-top: 28px;
+  margin-top: 18px;
   padding-bottom: 10px;
 }
 
@@ -83,70 +108,87 @@
   margin-bottom: 20px;
 }
 
-.list .list_title {
-  position: relative;
-  margin-left: 15px;
-}
-
 .list .list_title h3 {
   font-size: 16px;
   font-weight: 600;
   display: inline;
-  color: #333333;
-}
-
-.list .list_title:after {
-  position: absolute;
-  left: 0;
-  bottom: 50%;
-  transform: translateY(50%);
-  content: "";
-  background: #B59F87;
-  width: 4px;
-  height: 16px;
-  display: block;
+  color: #272A33;
 }
 
 .list .open_btn {
-  color: #999999;
-  font-size: 14px;
+  color: #9397A8;
+  font-size: 12px;
 }
 
 .list .list_group .list_li {
+  box-sizing: border-box;
+  position: relative;
   border-radius: 6px;
-  float: left;
   overflow: hidden;
+  padding-right: 0;
+  height: 120px;
+}
+
+.list .list_group img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .list .list_group .list_txt {
-  padding: 0 10px;
-  width: 100%;
-  height: 75px;
-  position: relative;
-  border: 1px solid #d7d7d7;
-  box-sizing: border-box;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  background: #ffffff;
+  position: absolute;
+  bottom: 0px;
+  left: 25px;
+  color: #ffffff;
 }
 
 .list .list_group .list_txt h3 {
-  font-size: 16px;
-  color: #000000;
-  margin-top: 8px;
+  font-size: 13px;
 }
 
 .list .list_group .list_txt p {
-  font-size: 14px;
-  color: #999999;
+  font-size: 11px;
+}
+
+.list .list_group .live {
   position: absolute;
-  bottom: -5px;
-  padding: 0;
+  top: 10px;
+  left: 25px;
+  width: 50px;
+  height: 16px;
+  font-size: 11px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border-radius: 6px;
+}
+
+.list .media-wrapper .media-heading {
+  font-size: 15px;
+  color: #272A33;
+  letter-spacing: 0.49px;
+  margin-bottom: 15px;
+}
+
+.list .media-wrapper .media-body {
+  font-size: 13px;
+  color: #808080;
+  width: 75%;
+}
+
+.list .media-wrapper .media-right {
+  border-radius: 8px;
+  padding-left: 0;
+  width: 90px;
+}
+
+.list .media-wrapper .media-right img {
+  width: 100%;
 }
 
 .list .list_module {
-  border-bottom: 1px solid #d7d7d7;
   padding-bottom: 10px;
+  background: #F7F8F9;
 }
 
 .list .list_module .list_pic {
@@ -154,27 +196,38 @@
 }
 
 .list .small_title {
-  font-size: 16px;
-  color: #333333;
+  font-size: 14px;
+  color: #272A33;
   margin-top: 12px;
 }
 
 .list .article_info {
-  color: #cccccc;
-  font-size: 14px;
+  font-size: 11px;
+  color: #9397A8;
   margin-top: 10px;
 }
 
-.list .article_info .author {
-  float: left;
+.list .meeting {
+  background: #FFF;
 }
 
-.list .article_info .timer {
-  float: left;
+.list .meeting .meet-header span {
+  background-image: linear-gradient(180deg, #DBC896 0%, #CCAC6C 100%);
+  border-radius: 4px 4px 0 4px;
+  padding: 3px 4px;
+  color: #ffffff;
+}
+
+.list .meeting .meet-header h3 {
+  display: inline;
+}
+
+.list .meeting .author {
+  margin-left: 20px;
 }
 
 .footer_tap {
-  border-top: 1px solid #cccccc;
+  box-shadow: 2px 2px 5px 0 rgba(153, 153, 153, 0.5);
   background: #ffffff;
   height: 50px;
   position: fixed;
@@ -194,15 +247,15 @@
   height: 50px;
   margin: 0 auto;
   color: #2295E7;
-  font-size: 16px;
+  font-size: 12px;
   text-decoration: none;
-  font-weight: bold;
 }
 
 .footer_tap a {
   display: inline-block;
   padding: 4px 0;
   color: #666666;
+  font-size: 12px;
   text-decoration: none;
 }
 
