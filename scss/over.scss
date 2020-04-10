@@ -19,19 +19,38 @@
     box-shadow: 3px 3px 5px rgb(226, 225, 225);
 
     .content-top {
+      position: relative;
       background-color: $colorL;
       border-radius: 6px 6px 0 0;
       padding: 10px;
       color: $colorG;
+      height: 76px;
 
       span {
-        font-size: $fontB;
+        font-size: $fontE;
+      }
+
+      .h4 {
+        margin: 0;
+        margin-bottom: 7px;
+
+
+      }
+
+      .book {
+        width: 162px;
+        height: 130px;
+        position: absolute;
+        right: 20px;
+        top: 0;
+        background: url('../img/over.jpg') no-repeat;
+        background-size: contain;
       }
     }
   }
 
   .desc {
-    margin-top: 15px;
+    margin-top: 55px;
     font-size: $fontI;
 
     div {

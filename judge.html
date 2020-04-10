@@ -37,39 +37,40 @@
                         <span class="total">10</span>
                     </div>
                 </div>
-                <p class="topic_txt">
-                    1.这是一道判断题，这是一道判断题这是一道判断题这是一，道判断题这是一道判断题这是一道判断题这是。
+                <p class="topic_txt">三国时期，人们尊称左将军刘备为“左公”。因“
+                    左公”在当地安营扎寨得名的是河北正定。
                 </p>
                 <div class="select_box">
                     <div class="row">
-                        <div class="col-lg-6 select_li">
-                            <div class="input-group">
-                                <input type="text" class="form-control" readonly value="正确">
-                            </div>
+                        <div class="col-lg-6 sele-radio">
+                            <input type="radio" name="killOrder" value="1" id='killOrder1' />
+                            <label for="killOrder1">正确</label>
+
                         </div>
-                        <div class="col-lg-6 select_li">
-                            <div class="input-group">
-                                <input type="text" class="form-control" readonly value="错误">
-                            </div>
+                        <div class="col-lg-6 sele-radio">
+                            <input type="radio" name="killOrder" value="2" id='killOrder2' />
+                            <label for="killOrder2">错误</label>
                         </div>
                     </div>
                 </div>
+                <!-- 答案解析 -->
+                <div class="resolve">
+                    <h3 class="topic_type">答案解析</h3>
+                    <p class="h4">正确</p>
+                    <p class="h5">答案的解释答案的解释答案的解释答案的解释答案的解释。</p>
+                </div>
+
             </div>
         </div>
     </div>
-    <!-- 答案解析 -->
-    <div class="container resolve">
-        <h3 class="topic_type">答案解析</h3>
-        <p class="h4">正确</p>
-        <p class="h5">答案的解释答案的解释答案的解释答案的解释答案的解释。</p>
-    </div>
+
 
     <!-- 答案 -->
-    <a href="#myOk" data-toggle="modal">
+    <!-- <a href="#myOk" data-toggle="modal">
         <div class="Answer">
             <span>查看答案</span>
         </div>
-    </a>
+    </a> -->
     <!-- 中途退出Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
@@ -128,6 +129,18 @@
             $(".resolve").show();
             $(".determine").html('下一题');
         });
+
+        $(".sele-radio label").click(function () {
+            // 所以得颜色改为黑色
+            $('label').each(function (index, domEle) {
+                $(this).removeClass("col");
+            });
+            // 添加颜色
+            $(this).toggleClass("col");
+            // 显示按钮
+            $(".determine").show();
+        })
+
 
     </script>
 </body>

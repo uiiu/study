@@ -3,7 +3,7 @@
   样式规范表
 */
 .again {
-  background-color: #B59F87;
+  background-color: #BC9C6A;
   color: #ffffff;
   border: none;
 }
@@ -33,18 +33,35 @@
 }
 
 .over .content .content-top {
-  background-color: #B59F87;
+  position: relative;
+  background-color: #BC9C6A;
   border-radius: 6px 6px 0 0;
   padding: 10px;
   color: #ffffff;
+  height: 76px;
 }
 
 .over .content .content-top span {
-  font-size: 38px;
+  font-size: 24px;
+}
+
+.over .content .content-top .h4 {
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+.over .content .content-top .book {
+  width: 162px;
+  height: 130px;
+  position: absolute;
+  right: 20px;
+  top: 0;
+  background: url("../img/over.jpg") no-repeat;
+  background-size: contain;
 }
 
 .over .desc {
-  margin-top: 15px;
+  margin-top: 55px;
   font-size: 16px;
 }
 
