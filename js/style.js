@@ -13,5 +13,5 @@ $(function () {
         window.location.href = "over.html";
     })
 
-
 }())
+

@@ -56,7 +56,7 @@ body {
 .determine {
     display: none;
     color: $colorG;
-    font-size: $fontI;
+    font-size: $fontJ;
     border-radius: 5px;
     padding: 5px 0;
     background-color: $colorL;
@@ -228,7 +228,7 @@ body {
     }
 }
 
-// 答案
+// 答案错误
 .Answer {
     // position: absolute;
     // right: 15px;
@@ -243,6 +243,41 @@ body {
     background: url("../img/Answer.png") no-repeat;
     background-size: auto 100%;
     padding-left: 24px;
+}
+
+#myOk {
+    .modal-content {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .tips {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        background-color: #E65558;
+        text-align: center;
+        font-size: 24px;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 20px;
+        margin: 10px auto 0;
+    }
+
+    .desc {
+        text-align: center;
+        font-size: 15px;
+        color: #808080;
+        margin: 20px 0 10px;
+    }
+
+    .right-tip {
+        font-size: 15px;
+        color: #272A33;
+        text-align: center;
+        font-weight: bold;
+        margin: 8px 0 10px;
+    }
 }
 
 
@@ -317,4 +352,24 @@ input[type=radio][disabled]:checked+label::before {
 
 .col {
     color: #BC9C6A;
+}
+
+// 倒计时
+.count-time {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 12px;
+    background-color: #fff;
+    text-align: center;
+    display: none;
+
+    .second {
+        font-size: 12px;
+        color: #272A33;
+    }
 }

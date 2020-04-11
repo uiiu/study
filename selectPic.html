@@ -20,7 +20,7 @@
                 </a>
 
                 <a class="correct">
-                    <div class="col-xs-3 col-xs-offset-5 determine text-right">确定</div>
+                    <div class="col-xs-2 col-xs-offset-5 determine text-right">确定</div>
                 </a>
             </div>
         </div>
@@ -38,7 +38,7 @@
                     </div>
                 </div>
                 <div class="topic_pic"><img src="./img/list_pic.png" alt=""></div>
-                <p class="topic_txt">图中遮挡的公司文化内容是___。</p>
+                <p class="topic_txt">图中遮挡的公司文化内容是()。</p>
                 <div class="select_box">
                     <div class="row">
                         <div class="col-lg-6 select_li">
@@ -130,14 +130,23 @@
     <script>
         $(".select_li").click(function () {
             $(this).addClass("active").siblings().removeClass("active");
-            $(".determine").show();
-        });
-        $(".correct").click(function () {
-            if ($(".determine").html() == '下一题') {
+            // $(".determine").show();
+            // console.log($(this).find('input').val());
+
+            if ($(this).find('input').val() == 'A. 山西运城' || $(this).find('input').val() == 'D. 陕西兴平' || $(this).find('input').val() == 'B. 河北正定' || $(this).find('input').val() == 'C. 河北涿州') {
                 window.location.href = "./single.html";
             }
-            $(".resolve").show();
-            $(".determine").html('下一题');
         });
+        // $(".correct").click(function () {
+            // console.log($(this));
+
+            // window.location.href = "./single.html";
+
+        /* if ($(".determine").html() == '下一题') {
+            window.location.href = "./single.html";
+        } */
+            // $(".resolve").show();
+            // $(".determine").html('下一题');
+        // });
     </script>
 </body>

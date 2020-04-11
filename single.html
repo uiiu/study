@@ -20,7 +20,7 @@
                 </a>
 
                 <a class="correct">
-                    <div class="col-xs-3 col-xs-offset-5 determine text-right">确定</div>
+                    <div class="col-xs-2 col-xs-offset-5 determine text-right">确定</div>
                 </a>
             </div>
         </div>
@@ -38,7 +38,7 @@
                     </div>
                 </div>
                 <p class="topic_txt">三国时期，人们尊称左将军刘备为“左公”。因“
-                    左公”在当地安营扎寨得名的是___。
+                    左公”在当地安营扎寨得名的是()。
                 </p>
                 <div class="select_box">
                     <div class="row">
@@ -103,23 +103,20 @@
 
     <!-- 点击确定之后Modal -->
     <div class="modal fade" id="myOk" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-small" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">答案</h4>
-                </div>
                 <div class="modal-body">
-                    <p class="h4">答案一</p>
-                    <p class="h5">答案的解释答案的解释答案的解释答案的解释答案的解释。</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default btn-quit" data-dismiss="modal">确定</button>
-                    <!-- <button type="button" class="btn btn-quit again" data-dismiss="modal" id="">退出</button> -->
+                    <div class="tips">X</div>
+                    <p class="desc">这道题答错了咯！</p>
+                    <p class="right-tip">正确答案：C</p>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- 倒计时 -->
+    <div class="count-time">
+        <span class="second" id="second">3</span>s
     </div>
 
 
@@ -130,14 +127,28 @@
     <script>
         $(".select_li").click(function () {
             $(this).addClass("active").siblings().removeClass("active");
-            $(".determine").show();
-        });
-        $(".correct").click(function () {
-            if ($(".determine").html() == '下一题') {
+            if ($(this).find('input').val() == 'B. 山西运城') {
                 window.location.href = "./manySelect.html";
+            } else {
+                $('.count-time').show();
+                //1000毫秒调用一次
+                var timer = window.setInterval("countDown()", 1000);
+                $("#myOk").modal();
             }
-            $(".resolve").show();
-            $(".determine").html('下一题');
         });
+        // 倒计时
+        function countDown() {
+            var time = document.getElementById("second");
+            //alert(time.innerHTML);
+            //获取到id为time标签中的内容，现进行判断
+            if (time.innerHTML == 0) {
+                $("#myOk").modal("hide");
+                window.location.href = "./manySelect.html";
+                //等于0时清除计时
+                clearInterval(timer);
+            } else {
+                time.innerHTML = time.innerHTML - 1;
+            }
+        }
     </script>
 </body>

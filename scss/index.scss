@@ -4,22 +4,21 @@
     position: relative;
 
     .mine {
-        height: 40px;
+        height: 35px;
         font-size: 15px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 8px;
+        margin-bottom: 4px;
 
         img {
             display: inline-block;
-            width: 30px;
+            width: 26px;
         }
 
         a {
             letter-spacing: 0.49px;
             color: #272A33;
-            margin-left: 7px;
         }
 
         .header-right {
@@ -27,22 +26,19 @@
 
             span {
                 position: absolute;
-                right: -7px;
-                top: -5px;
-                // width: 20px;
-                // height: 20px;
+                right: 0px;
+                top: 2px;
+                width: 8px;
+                height: 8px;
                 background-color: #E65558;
                 color: #ffff;
-                font-size: 10px;
-                padding: 1px 3px;
-                border-radius: 7px;
+                border-radius: 8px;
 
             }
 
             img {
                 width: 20px;
             }
-
         }
     }
 
@@ -100,13 +96,13 @@
     }
 
     .list_title_box {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .list_title {
         h3 {
             font-size: $fontI;
-            font-weight: 600;
+            font-weight: bold;
             display: inline;
             color: #272A33;
         }
@@ -136,7 +132,6 @@
             border-radius: 6px;
             overflow: hidden;
             padding-right: 0;
-            height: 120px;
         }
 
         img {
@@ -176,6 +171,10 @@
 
     // 媒体对象
     .media-wrapper {
+        .media {
+            border-bottom: 1px solid $colorH;
+        }
+
         .media-heading {
             font-size: 15px;
             color: #272A33;
@@ -253,10 +252,33 @@
     bottom: 0;
     left: 0;
     right: 0;
+    display: flex;
+    padding-top: 5px;
 
-    .col-xs-4 {
+
+    .item {
+        flex: auto;
         font-size: $fontI;
-        padding: 0;
+        display: flex;
+        justify-content: center;
+
+
+        a {
+            color: $colorC;
+            font-size: 12px;
+            text-decoration: none;
+
+            img {
+                width: 24px;
+                height: 24px;
+            }
+
+            span {
+                padding: 0;
+                margin-top: 3px;
+            }
+        }
+
     }
 
     .study_btn {
@@ -269,14 +291,6 @@
             text-decoration: none;
         }
 
-    }
-
-    a {
-        display: inline-block;
-        padding: 4px 0;
-        color: $colorC;
-        font-size: 12px;
-        text-decoration: none;
     }
 
     a:focus,

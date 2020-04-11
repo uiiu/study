@@ -3,7 +3,7 @@
   样式规范表
 */
 .again {
-  background-color: #B59F87;
+  background-color: #BC9C6A;
   color: #ffffff;
   border: none;
 }
@@ -19,23 +19,22 @@
 }
 
 .index_header .mine {
-  height: 40px;
+  height: 35px;
   font-size: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .index_header .mine img {
   display: inline-block;
-  width: 30px;
+  width: 26px;
 }
 
 .index_header .mine a {
   letter-spacing: 0.49px;
   color: #272A33;
-  margin-left: 7px;
 }
 
 .index_header .mine .header-right {
@@ -44,13 +43,13 @@
 
 .index_header .mine .header-right span {
   position: absolute;
-  right: -7px;
-  top: -5px;
+  right: 0px;
+  top: 2px;
+  width: 8px;
+  height: 8px;
   background-color: #E65558;
   color: #ffff;
-  font-size: 10px;
-  padding: 1px 3px;
-  border-radius: 7px;
+  border-radius: 8px;
 }
 
 .index_header .mine .header-right img {
@@ -194,17 +193,36 @@
 .footer_tap {
   box-shadow: 2px 2px 5px 0 rgba(153, 153, 153, 0.5);
   background: #ffffff;
-  width: 100%;
   height: 50px;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
+  display: flex;
+  padding-top: 5px;
 }
 
-.footer_tap .col-xs-4 {
+.footer_tap .item {
+  flex: auto;
   font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer_tap .item a {
+  color: #666666;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.footer_tap .item a img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer_tap .item a span {
   padding: 0;
+  margin-top: 3px;
 }
 
 .footer_tap .study_btn a {
@@ -212,14 +230,6 @@
   height: 50px;
   margin: 0 auto;
   color: #2295E7;
-  font-size: 12px;
-  text-decoration: none;
-}
-
-.footer_tap a {
-  display: inline-block;
-  padding: 4px 0;
-  color: #666666;
   font-size: 12px;
   text-decoration: none;
 }

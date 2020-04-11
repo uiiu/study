@@ -61,7 +61,7 @@ body {
 .determine {
   display: none;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 14px;
   border-radius: 5px;
   padding: 5px 0;
   background-color: #BC9C6A;
@@ -229,6 +229,39 @@ body {
   padding-left: 24px;
 }
 
+#myOk .modal-content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#myOk .tips {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #E65558;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 20px;
+  margin: 10px auto 0;
+}
+
+#myOk .desc {
+  text-align: center;
+  font-size: 15px;
+  color: #808080;
+  margin: 20px 0 10px;
+}
+
+#myOk .right-tip {
+  font-size: 15px;
+  color: #272A33;
+  text-align: center;
+  font-weight: bold;
+  margin: 8px 0 10px;
+}
+
 video {
   object-fit: cover;
   outline: none;
@@ -293,4 +326,23 @@ input[type=radio][disabled]:checked + label::before {
 
 .col {
   color: #BC9C6A;
+}
+
+.count-time {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 12px;
+  background-color: #fff;
+  text-align: center;
+  display: none;
+}
+
+.count-time .second {
+  font-size: 12px;
+  color: #272A33;
 }
