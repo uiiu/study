@@ -162,14 +162,8 @@
     <script>
         $(".select_li").click(function () {
             $(this).addClass("active").siblings().removeClass("active");
-            if ($(this).find('input').val() == 'B. 山西运城') {
-                window.location.href = "./selectPic.html";
-            } else {
-                $('.count-time').show();
-                //1000毫秒调用一次
-                var timer = window.setInterval("countDown()", 1000);
-                $("#myOk").modal();
-            }
+            // 显示按钮
+            $(".determine").show();
         });
 
         // 倒计时
@@ -187,13 +181,16 @@
             }
         }
 
-        // $(".correct").click(function () {
-        //     if ($(".determine").html() == '下一题') {
-        //         window.location.href = "";
-        //     }
-        //     $(".resolve").show();
-        //     $(".determine").html('下一题');
-        // });
+        $(".correct").click(function () {
+            if ($(".select_li").find('input').val() == 'B. 山西运城') {
+                window.location.href = "./selectPic.html";
+            } else {
+                $('.count-time').show();
+                //1000毫秒调用一次
+                var timer = window.setInterval("countDown()", 1000);
+                $("#myOk").modal();
+            }
+        });
 
     </script>
 </body>

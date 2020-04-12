@@ -154,7 +154,12 @@
     <script>
         $(".select_li").click(function () {
             $(this).addClass("active").siblings().removeClass("active");
-            if ($(this).find('input').val() == 'B. 山西运城') {
+            $(".determine").show();
+
+        });
+        $(".correct").click(function () {
+
+            if ($(".select_li").find('input').val() == 'B. 山西运城') {
                 window.location.href = "./manySelect.html";
             } else {
                 $('.count-time').show();
@@ -162,7 +167,9 @@
                 var timer = window.setInterval("countDown()", 1000);
                 $("#myOk").modal();
             }
+
         });
+
         // 倒计时
         function countDown() {
             var time = document.getElementById("second");

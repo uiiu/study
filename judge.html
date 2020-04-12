@@ -41,16 +41,14 @@
                     左公”在当地安营扎寨得名的是河北正定。
                 </p>
                 <div class="select_box">
-                    <div class="row">
-                        <div class="col-lg-6 sele-radio">
-                            <input type="radio" name="killOrder" value="1" id='killOrder1' />
-                            <label for="killOrder1">正确</label>
+                    <div class="sele-radio">
+                        <input type="radio" name="killOrder" value="1" id='killOrder1' />
+                        <label for="killOrder1">正确</label>
 
-                        </div>
-                        <div class="col-lg-6 sele-radio">
-                            <input type="radio" name="killOrder" value="2" id='killOrder2' />
-                            <label for="killOrder2">错误</label>
-                        </div>
+                    </div>
+                    <div class="sele-radio">
+                        <input type="radio" name="killOrder" value="2" id='killOrder2' />
+                        <label for="killOrder2">错误</label>
                     </div>
                 </div>
                 <!-- 答案解析 -->
@@ -165,13 +163,21 @@
             // 添加颜色
             $(this).toggleClass("col");
             // 显示按钮
-            // $(".determine").show();
-            if ($(this).siblings().val() == 1 || $(this).siblings().val() == 2) {
+            $(".determine").show();
+        })
+
+        $(".correct").click(function () {
+            // if ($(".determine").html() == '下一题') {
+            //     window.location.href = "./Completion.html";
+            // }
+            // $(".resolve").show();
+            // $(".determine").html('下一题');
+
+            if ($(".sele-radio label").siblings().val() == 1 || $(".sele-radio label").siblings().val() == 2) {
                 window.location.href = "./Completion.html";
             }
 
-            // console.log($(this).siblings().val()==1 || $(this).siblings().val()==2)
-        })
+        });
 
 
     </script>

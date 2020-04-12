@@ -308,7 +308,7 @@ video {
 }
 
 .sele-radio {
-  padding: 8px 14px;
+  padding: 8px 0;
   font-size: 15px;
   color: #5F6578;
   letter-spacing: 0.49px;
@@ -370,4 +370,28 @@ input[type=radio][disabled]:checked + label::before {
 .count-time .second {
   font-size: 12px;
   color: #272A33;
+}
+
+#myModal .modal-header,
+#myTip .modal-header {
+  padding: 10px;
+}
+
+#myModal .modal-body,
+#myTip .modal-body {
+  padding-top: 10px;
+}
+
+#myModal h4,
+#myModal .h4,
+#myTip h4,
+#myTip .h4 {
+  font-size: 14px;
+}
+
+#myModal .h5,
+#myTip .h5 {
+  font-size: 13px;
+  color: #999;
+  line-height: 1.5;
 }
