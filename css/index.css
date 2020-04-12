@@ -24,15 +24,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 4px;
 }
 
-.index_header .mine img {
+.index_header .mine .header-left img {
   display: inline-block;
   width: 26px;
+  margin-top: -2px;
 }
 
-.index_header .mine a {
+.index_header .mine .header-left a {
   letter-spacing: 0.49px;
   color: #272A33;
 }
@@ -44,7 +44,7 @@
 .index_header .mine .header-right span {
   position: absolute;
   right: 0px;
-  top: 2px;
+  top: -3px;
   width: 8px;
   height: 8px;
   background-color: #E65558;
@@ -170,23 +170,24 @@
   font-size: 15px;
   color: #272A33;
   letter-spacing: 0.49px;
-  margin-bottom: 15px;
+  margin-bottom: 6px;
 }
 
 .list .media-wrapper .media-body {
   font-size: 13px;
   color: #808080;
-  width: 75%;
+  width: 70%;
 }
 
 .list .media-wrapper .media-right {
   border-radius: 8px;
   padding-left: 0;
-  width: 90px;
+  width: 30%;
 }
 
 .list .media-wrapper .media-right img {
   width: 100%;
+  padding-left: 2px;
 }
 
 .list .list_module {
@@ -214,14 +215,18 @@
   background: #FFF;
 }
 
-.list .meeting .meet-header span {
+.list .meeting a {
+  text-decoration: none;
+}
+
+.list .meeting a .meet-header span {
   background-image: linear-gradient(180deg, #DBC896 0%, #CCAC6C 100%);
   border-radius: 4px 4px 0 4px;
   padding: 3px 4px;
   color: #ffffff;
 }
 
-.list .meeting .meet-header h3 {
+.list .meeting a .meet-header h3 {
   display: inline;
 }
 
@@ -238,30 +243,26 @@
   left: 0;
   right: 0;
   display: flex;
-  padding-top: 5px;
+  padding-top: 7px;
 }
 
 .footer_tap .item {
   flex: auto;
-  font-size: 16px;
+  font-size: 10px;
   display: flex;
   justify-content: center;
 }
 
 .footer_tap .item a {
   color: #666666;
-  font-size: 12px;
+  font-size: 10px;
   text-decoration: none;
 }
 
 .footer_tap .item a img {
-  width: 24px;
-  height: 24px;
-}
-
-.footer_tap .item a span {
-  padding: 0;
-  margin-top: 3px;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 3px;
 }
 
 .footer_tap .study_btn a {
@@ -269,7 +270,7 @@
   height: 50px;
   margin: 0 auto;
   color: #2295E7;
-  font-size: 12px;
+  font-size: 10px;
   text-decoration: none;
 }
 

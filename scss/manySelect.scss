@@ -8,7 +8,7 @@ body {
 }
 
 .index_header {
-    padding: 15px 0;
+    padding: 10px 0;
     position: relative;
 
     .mine {
@@ -116,12 +116,13 @@ body {
     }
 
     .input-group {
+        box-sizing: border-box;
         margin: 0 auto;
         border-radius: 5px;
         overflow: hidden;
-        padding: 5px;
+        padding: 2px;
         background: $colorJ;
-        width: 84%;
+        width: 100%;
         border: 1px solid #D1D5D9;
 
         input {
@@ -142,7 +143,10 @@ body {
 
 // 多选题答案
 .select_box {
-    margin-top: 20px;
+    margin-top: 6px;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
 
     .form-control:focus {
         box-shadow: none;
@@ -161,7 +165,7 @@ body {
 
 // 题内容
 .topic_box {
-    padding: 10px 0 10px;
+    padding: 2px 0 5px;
 
     .topic {
         .topic_header {
@@ -188,13 +192,16 @@ body {
         }
 
         .topic_pic {
-            width: 100%;
-            height: 170px;
+            width: 85%;
+            height: 130px;
             border-radius: 8px;
             overflow: hidden;
+            margin: 0 auto;
+            margin-top: 6px;
 
             img {
                 width: 100%;
+                height: 100%;
             }
         }
 
@@ -208,7 +215,7 @@ body {
         .topic_txt {
             font-size: 15px;
             line-height: 1.7;
-            margin-top: 20px;
+            margin-top: 5px;
 
             input {
                 background: none;
@@ -229,23 +236,39 @@ body {
 }
 
 // 答案错误
+
+.ans-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    color: $colorL;
+    text-decoration: none;
+
+    &:link,
+    &:visited,
+    &:active {
+        text-decoration: none;
+        color: $colorL;
+    }
+}
+
 .Answer {
     // position: absolute;
     // right: 15px;
     // bottom: 20px;
-    float: right;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    // float: right;
+    margin-top: 15px;
+    margin-bottom: 10px;
     width: 100px;
     height: 20px;
-    color: $colorB;
     font-size: $fontI;
-    background: url("../img/Answer.png") no-repeat;
+    background: url("../img/Answer.jpg") no-repeat;
     background-size: auto 100%;
     padding-left: 24px;
 }
 
-#myOk {
+#myOk,
+#myTip,
+#myModal {
     .modal-content {
         width: 70%;
         margin: 0 auto;
@@ -279,6 +302,9 @@ body {
         margin: 8px 0 10px;
     }
 }
+
+// 答案提示
+// .my-ans-tip {}
 
 
 // video

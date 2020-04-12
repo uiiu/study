@@ -40,26 +40,24 @@
                 <div class="topic_pic"><img src="./img/list_pic.png" alt=""></div>
                 <p class="topic_txt">图中遮挡的公司文化内容是()。</p>
                 <div class="select_box">
-                    <div class="row">
-                        <div class="col-lg-6 select_li">
-                            <div class="input-group">
-                                <input type="text" class="form-control" readonly value="A. 山西运城">
-                            </div>
+                    <div class="select_li">
+                        <div class="input-group">
+                            <input type="text" class="form-control" readonly value="A. 山西运城">
                         </div>
-                        <div class="col-lg-6 select_li">
-                            <div class="input-group">
-                                <input type="text" class="form-control" readonly value="B. 河北正定">
-                            </div>
+                    </div>
+                    <div class="select_li">
+                        <div class="input-group">
+                            <input type="text" class="form-control" readonly value="B. 河北正定">
                         </div>
-                        <div class="col-lg-6 select_li">
-                            <div class="input-group">
-                                <input type="text" class="form-control" readonly value="C. 河北涿州">
-                            </div>
+                    </div>
+                    <div class="select_li">
+                        <div class="input-group">
+                            <input type="text" class="form-control" readonly value="C. 河北涿州">
                         </div>
-                        <div class="col-lg-6 select_li">
-                            <div class="input-group">
-                                <input type="text" class="form-control" readonly value="D. 陕西兴平">
-                            </div>
+                    </div>
+                    <div class="select_li">
+                        <div class="input-group">
+                            <input type="text" class="form-control" readonly value="D. 陕西兴平">
                         </div>
                     </div>
                 </div>
@@ -70,16 +68,19 @@
                     <p class="h4">答案一</p>
                     <p class="h5">答案的解释答案的解释答案的解释答案的解释答案的解释。</p>
                 </div>
+
+                <!-- 答案 -->
+                <a href="#myTip" data-toggle="modal" class="ans-wrapper">
+                    <div class="Answer">
+                        <span>查看提示</span>
+                    </div>
+                </a>
+
             </div>
         </div>
     </div>
 
-    <!-- 答案 -->
-    <!-- <a href="#myOk" data-toggle="modal">
-        <div class="Answer">
-            <span>查看答案</span>
-        </div>
-    </a> -->
+
 
     <!-- 中途退出Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -101,23 +102,23 @@
         </div>
     </div>
 
-    <!-- 点击确定之后Modal -->
-    <div class="modal fade" id="myOk" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <!-- 点击提示之后Modal -->
+    <div class="modal fade my-ans-tip" id="myTip" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                             aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">答案</h4>
+                    <h4 class="modal-title" id="myModalLabel">提示</h4>
                 </div>
                 <div class="modal-body">
-                    <p class="h4">答案一</p>
+                    <p class="h4">C. 河北涿州</p>
                     <p class="h5">答案的解释答案的解释答案的解释答案的解释答案的解释。</p>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default btn-quit" data-dismiss="modal">确定</button>
-                    <!-- <button type="button" class="btn btn-quit again" data-dismiss="modal" id="">退出</button> -->
-                </div>
+                <!-- <div class="modal-footer"> -->
+                <!-- <button type="button" class="btn btn-default btn-quit" data-dismiss="modal">确定</button> -->
+                <!-- <button type="button" class="btn btn-quit again" data-dismiss="modal" id="">退出</button> -->
+                <!-- </div> -->
             </div>
         </div>
     </div>
@@ -130,23 +131,24 @@
     <script>
         $(".select_li").click(function () {
             $(this).addClass("active").siblings().removeClass("active");
-            // $(".determine").show();
+            $(".determine").show();
             // console.log($(this).find('input').val());
 
-            if ($(this).find('input').val() == 'A. 山西运城' || $(this).find('input').val() == 'D. 陕西兴平' || $(this).find('input').val() == 'B. 河北正定' || $(this).find('input').val() == 'C. 河北涿州') {
+
+        });
+        $(".correct").click(function () {
+            if ($('.select_li').find('input').val() == 'A. 山西运城' || $('.select_li').find('input').val() == 'D. 陕西兴平' || $('.select_li').find('input').val() == 'B. 河北正定' || $('.select_li').find('input').val() == 'C. 河北涿州') {
                 window.location.href = "./single.html";
             }
-        });
-        // $(".correct").click(function () {
             // console.log($(this));
 
             // window.location.href = "./single.html";
 
-        /* if ($(".determine").html() == '下一题') {
-            window.location.href = "./single.html";
-        } */
+            /* if ($(".determine").html() == '下一题') {
+                window.location.href = "./single.html";
+            } */
             // $(".resolve").show();
             // $(".determine").html('下一题');
-        // });
+        });
     </script>
 </body>

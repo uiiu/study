@@ -11,14 +11,17 @@
         align-items: center;
         margin-bottom: 4px;
 
-        img {
-            display: inline-block;
-            width: 26px;
-        }
+        .header-left {
+            img {
+                display: inline-block;
+                width: 26px;
+                margin-top: -2px;
+            }
 
-        a {
-            letter-spacing: 0.49px;
-            color: #272A33;
+            a {
+                letter-spacing: 0.49px;
+                color: #272A33;
+            }
         }
 
         .header-right {
@@ -27,7 +30,7 @@
             span {
                 position: absolute;
                 right: 0px;
-                top: 2px;
+                top: -3px;
                 width: 8px;
                 height: 8px;
                 background-color: #E65558;
@@ -145,7 +148,7 @@
         &>div {
             line-height: 50px;
             text-align: center;
-            font-size: $fontI;
+            font-size: 14px;
             // border: 1px solid $colorF;
             margin-bottom: 20px;
 
@@ -191,29 +194,25 @@
     left: 0;
     right: 0;
     display: flex;
-    padding-top: 5px;
+    padding-top: 7px;
 
 
     .item {
         flex: auto;
-        font-size: $fontI;
+        font-size: 10px;
         display: flex;
         justify-content: center;
 
 
         a {
             color: $colorC;
-            font-size: 12px;
+            font-size: 10px;
             text-decoration: none;
 
             img {
-                width: 24px;
-                height: 24px;
-            }
-
-            span {
-                padding: 0;
-                margin-top: 3px;
+                width: 20px;
+                height: 20px;
+                margin-bottom: 3px;
             }
         }
 
@@ -225,7 +224,7 @@
             height: 50px;
             margin: 0 auto;
             color: $colorM;
-            font-size: 12px;
+            font-size: 10px;
             text-decoration: none;
         }
 

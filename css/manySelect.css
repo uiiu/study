@@ -22,7 +22,7 @@ body {
 }
 
 .index_header {
-  padding: 15px 0;
+  padding: 10px 0;
   position: relative;
 }
 
@@ -112,12 +112,13 @@ body {
 }
 
 .select_li .input-group {
+  box-sizing: border-box;
   margin: 0 auto;
   border-radius: 5px;
   overflow: hidden;
-  padding: 5px;
+  padding: 2px;
   background: #F5F5F5;
-  width: 84%;
+  width: 100%;
   border: 1px solid #D1D5D9;
 }
 
@@ -136,7 +137,10 @@ body {
 }
 
 .select_box {
-  margin-top: 20px;
+  margin-top: 6px;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .select_box .form-control:focus {
@@ -152,7 +156,7 @@ body {
 }
 
 .topic_box {
-  padding: 10px 0 10px;
+  padding: 2px 0 5px;
 }
 
 .topic_box .topic .topic_header {
@@ -178,14 +182,17 @@ body {
 }
 
 .topic_box .topic .topic_pic {
-  width: 100%;
-  height: 170px;
+  width: 85%;
+  height: 130px;
   border-radius: 8px;
   overflow: hidden;
+  margin: 0 auto;
+  margin-top: 6px;
 }
 
 .topic_box .topic .topic_pic img {
   width: 100%;
+  height: 100%;
 }
 
 .topic_box .topic .topic_type {
@@ -198,7 +205,7 @@ body {
 .topic_box .topic .topic_txt {
   font-size: 15px;
   line-height: 1.7;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .topic_box .topic .topic_txt input {
@@ -216,25 +223,39 @@ body {
   outline: none;
 }
 
+.ans-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  color: #BC9C6A;
+  text-decoration: none;
+}
+
+.ans-wrapper:link, .ans-wrapper:visited, .ans-wrapper:active {
+  text-decoration: none;
+  color: #BC9C6A;
+}
+
 .Answer {
-  float: right;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
   width: 100px;
   height: 20px;
-  color: #333333;
   font-size: 16px;
-  background: url("../img/Answer.png") no-repeat;
+  background: url("../img/Answer.jpg") no-repeat;
   background-size: auto 100%;
   padding-left: 24px;
 }
 
-#myOk .modal-content {
+#myOk .modal-content,
+#myTip .modal-content,
+#myModal .modal-content {
   width: 70%;
   margin: 0 auto;
 }
 
-#myOk .tips {
+#myOk .tips,
+#myTip .tips,
+#myModal .tips {
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -247,14 +268,18 @@ body {
   margin: 10px auto 0;
 }
 
-#myOk .desc {
+#myOk .desc,
+#myTip .desc,
+#myModal .desc {
   text-align: center;
   font-size: 15px;
   color: #808080;
   margin: 20px 0 10px;
 }
 
-#myOk .right-tip {
+#myOk .right-tip,
+#myTip .right-tip,
+#myModal .right-tip {
   font-size: 15px;
   color: #272A33;
   text-align: center;

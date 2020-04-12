@@ -70,6 +70,13 @@
                     <p class="h4">答案一</p>
                     <p class="h5">答案的解释答案的解释答案的解释答案的解释答案的解释。</p>
                 </div>
+
+                <!-- 答案 -->
+                <a href="#myTip" data-toggle="modal" class="ans-wrapper">
+                    <div class="Answer">
+                        <span>查看提示</span>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
@@ -113,10 +120,30 @@
             </div>
         </div>
     </div>
+    <!-- 点击提示之后Modal -->
+    <div class="modal fade my-ans-tip" id="myTip" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">提示</h4>
+                </div>
+                <div class="modal-body">
+                    <p class="h4">C. 河北涿州</p>
+                    <p class="h5">答案的解释答案的解释答案的解释答案的解释答案的解释。</p>
+                </div>
+                <!-- <div class="modal-footer"> -->
+                <!-- <button type="button" class="btn btn-default btn-quit" data-dismiss="modal">确定</button> -->
+                <!-- <button type="button" class="btn btn-quit again" data-dismiss="modal" id="">退出</button> -->
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
 
     <!-- 倒计时 -->
     <div class="count-time">
-        <span class="second" id="second">3</span>s
+        <span class="second" id="second">2</span>s
     </div>
 
 
