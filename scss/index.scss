@@ -33,7 +33,7 @@
                 top: -3px;
                 width: 8px;
                 height: 8px;
-                background-color: #E65558;
+                background-color: #f00;
                 color: #ffff;
                 border-radius: 8px;
 
@@ -199,6 +199,16 @@
             img {
                 width: 100%;
                 padding-left: 2px;
+            }
+        }
+
+        .media-author {
+            margin: 10px 0;
+            color: #999;
+            font-size: 12px;
+
+            span {
+                margin-left: 10px;
             }
         }
 

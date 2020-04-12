@@ -33,7 +33,8 @@
                 top: -3px;
                 width: 8px;
                 height: 8px;
-                background-color: #E65558;
+                background-color: #f00;
+                ;
                 color: #ffff;
                 border-radius: 8px;
 
@@ -94,6 +95,7 @@
             background: #F3FAFF;
             border-radius: 4px;
             padding-right: 0;
+            border: 1px solid #ccc;
 
             &:nth-child(2) {
                 background: #F4FFFD;

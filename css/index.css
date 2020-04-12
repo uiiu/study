@@ -47,7 +47,7 @@
   top: -3px;
   width: 8px;
   height: 8px;
-  background-color: #E65558;
+  background-color: #f00;
   color: #ffff;
   border-radius: 8px;
 }
@@ -188,6 +188,16 @@
 .list .media-wrapper .media-right img {
   width: 100%;
   padding-left: 2px;
+}
+
+.list .media-wrapper .media-author {
+  margin: 10px 0;
+  color: #999;
+  font-size: 12px;
+}
+
+.list .media-wrapper .media-author span {
+  margin-left: 10px;
 }
 
 .list .list_module {

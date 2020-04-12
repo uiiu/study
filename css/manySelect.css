@@ -203,7 +203,7 @@ body {
 }
 
 .topic_box .topic .topic_txt {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.7;
   margin-top: 5px;
 }
@@ -212,7 +212,7 @@ body {
   background: none;
   outline: none;
   border: none;
-  border: 1px solid #999999;
+  background-color: #cccccc;
   margin: 0 3px;
   width: 27px;
   height: 27px;
@@ -224,10 +224,9 @@ body {
 }
 
 .ans-wrapper {
-  display: flex;
-  justify-content: flex-end;
   color: #BC9C6A;
   text-decoration: none;
+  float: right;
 }
 
 .ans-wrapper:link, .ans-wrapper:visited, .ans-wrapper:active {
@@ -249,7 +248,7 @@ body {
 #myOk .modal-content,
 #myTip .modal-content,
 #myModal .modal-content {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -308,10 +307,13 @@ video {
 }
 
 .sele-radio {
-  padding: 8px 0;
+  padding: 12px 0 6px 7px;
   font-size: 15px;
   color: #5F6578;
   letter-spacing: 0.49px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 6px;
 }
 
 .sele-radio label {
@@ -324,10 +326,9 @@ input[type="radio"] + label::before {
   content: "\a0";
   display: inline-block;
   vertical-align: middle;
-  width: 15px;
-  height: 15px;
+  width: 18px;
+  height: 18px;
   margin-right: 5px;
-  border-radius: 50%;
   text-indent: 1em;
   margin-bottom: 4px;
   border: 1px solid #CCCCCC;
@@ -386,12 +387,12 @@ input[type=radio][disabled]:checked + label::before {
 #myModal .h4,
 #myTip h4,
 #myTip .h4 {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 #myModal .h5,
 #myTip .h5 {
-  font-size: 13px;
+  font-size: 14px;
   color: #999;
   line-height: 1.5;
 }
