@@ -34,11 +34,13 @@
 
 .over .content .content-top {
   position: relative;
-  background-color: #BC9C6A;
   border-radius: 6px 6px 0 0;
   padding: 10px;
   color: #ffffff;
+  width: 100%;
   height: 76px;
+  background: url("../img/bg_03.jpg") no-repeat;
+  background-size: contain;
 }
 
 .over .content .content-top span {
@@ -47,21 +49,11 @@
 
 .over .content .content-top .h4 {
   margin: 0;
-  margin-bottom: 7px;
-}
-
-.over .content .content-top .book {
-  width: 162px;
-  height: 130px;
-  position: absolute;
-  right: 20px;
-  top: 0;
-  background: url("../img/over.jpg") no-repeat;
-  background-size: contain;
+  font-size: 15px;
 }
 
 .over .desc {
-  margin-top: 55px;
+  margin-top: 35px;
   font-size: 16px;
 }
 

@@ -319,7 +319,7 @@ video {
 .sele-radio label {
   font-weight: normal;
   margin-right: 10px;
-  width: 70%;
+  width: 100%;
 }
 
 input[type="radio"] + label::before {
