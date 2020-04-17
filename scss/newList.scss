@@ -1,0 +1,45 @@
+.list {
+  .msg-header {
+    padding: 10px 0;
+    position: relative;
+    font-size: 17px;
+    color: #272A33;
+    border-bottom: 1px solid #ECEDF0;
+
+    .go-back {
+      span {
+        vertical-align: -2px;
+      }
+    }
+
+    .title {
+      text-align: center;
+    }
+  }
+
+  .media-wrap {
+    .media {
+      border-bottom: 1px solid #ECEDF0;
+      padding: 10px 0;
+    }
+
+    .media-heading {
+      font-size: 17px;
+      color: #272A33;
+      letter-spacing: 0.49px;
+      margin-bottom: 6px;
+    }
+
+    .media-author {
+      margin: 0px 0 5px;
+      font-size: 12px;
+      color: #ACB2B9;
+
+      span {
+        margin-right: 10px;
+      }
+    }
+
+  }
+
+}
