@@ -1,0 +1,126 @@
+.meeting {
+
+  // header
+  .msg-header {
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    font-size: 17px;
+    color: #272A33;
+    // padding: 8px 0;
+
+
+    // border-bottom: 1px solid #ECEDF0;
+    .col-xs-2,
+    .col-xs-8 {
+      padding-right: 0;
+    }
+
+    .go-back {
+      margin-right: 10px;
+      margin-top: 4px;
+    }
+
+    .search {
+      border: 1px solid #CCCCCC;
+      border-radius: 17px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      padding: 4px 0;
+
+
+      i {
+        float: left;
+        // display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin-left: 10px;
+        background: url("../img/meeting/meet-icon01.jpg") no-repeat;
+        background-size: contain;
+        margin-top: 4px;
+        margin-right: 8px;
+      }
+
+      input {
+        float: left;
+        border: none;
+        outline: none;
+        -webkit-appearance: button;
+        -webkit-appearance: none;
+        border-radius: 0;
+        height: 24px;
+        line-height: 24px;
+        width: 80%;
+      }
+
+      input:focus {
+        border: none;
+      }
+    }
+
+    .tool {
+      margin-top: 8px;
+      padding-right: 15px;
+      padding-left: 0;
+
+      i {
+        display: inline-block;
+        width: 23px;
+        height: 23px;
+        margin-left: 10px;
+        background: url("../img/meeting/meet-icon02.jpg") no-repeat;
+        background-size: contain;
+        // margin-top: 4px;
+        // margin-right: 8px;
+      }
+    }
+
+
+  }
+
+  // list
+  .list {
+    border-bottom: 1px solid #F2F3F4;
+
+    .list-header {
+      padding: 5px 0;
+
+      .list-icon {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: url("../img/meeting/meet-icon03.jpg") no-repeat;
+        background-size: contain;
+      }
+
+      h4 {
+        display: inline-block;
+        font-size: 18px;
+        color: #272A33;
+      }
+    }
+
+    .list-content {
+      .item {
+        padding-bottom: 4px;
+
+        a {
+          font-size: 13px;
+          color: #808080;
+          padding: 0 5px;
+        }
+      }
+    }
+
+    .list-tip {
+      font-size: 12px;
+      color: #ACB2B9;
+      margin-bottom: 15px;
+
+      span {
+        margin-right: 10px;
+      }
+    }
+  }
+
+}

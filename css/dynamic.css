@@ -25,3 +25,43 @@
   padding: 15px;
   margin-bottom: 15px;
 }
+
+.dynamic .dynamic-list .container .item .item-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.dynamic .dynamic-list .container .item .item-header .item-tit {
+  font-size: 17px;
+  color: #BC9C6A;
+}
+
+.dynamic .dynamic-list .container .item .item-header .item-more {
+  font-size: 12px;
+  color: #999999;
+}
+
+.dynamic .dynamic-list .container .item .item-header .item-more i {
+  margin-left: 4px;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  line-height: 15px;
+  border-radius: 13px;
+  background: #BC9C6A;
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+}
+
+.dynamic .dynamic-list .container .item .item-desc {
+  font-size: 15px;
+  color: #272A33;
+  margin-bottom: 15px;
+}
+
+.dynamic .dynamic-list .container .item .pic img {
+  height: 200px;
+  border-radius: 8px;
+}
